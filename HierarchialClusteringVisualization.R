@@ -25,6 +25,8 @@ hierarchialClusteringDendogramMethod <- function(hierarchialClusteringDataset){
 }
 
 #visualizing cluster
+#if your dataset has multiple dimension then please do not run this plot. This plot is only for two dimensional data only.
+#if your dataset has multiple dimension and still you want to draw this plot then we need to create two dimension with the help of PCA.
 hierarchialClusteringClusters <- function(hierarchialClusteringDataset, hierarchialClusteringModel){
   
   y_hc = cutree(hierarchialClusteringModel, 5)
